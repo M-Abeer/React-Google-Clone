@@ -10,8 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "debounce": "^2.0.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-loader-spinner": "^6.1.6",
+    "react-player": "^2.14.1",
+    "react-router-dom": "^6.21.3",
+    "use": "^3.1.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
