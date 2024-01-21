@@ -5,14 +5,11 @@ import Footer from "./Footer";
 
 const App = () => {
   const [darkTheme, setDarkTheme] = useState(false);
-  console.log(darkTheme);
   return (
     <>
       <div className={darkTheme ? "dark" : ""}>
         <div className="bg-gray-200 dark:bg-gray-900 dark:text-gray-200 min-h-screen">
           <Header darkTheme={darkTheme} setDarkTheme={setDarkTheme} />
-          <Router />
-          <Footer />
         </div>
       </div>
     </>
