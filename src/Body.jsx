@@ -1,19 +1,19 @@
 import React from "react";
 import Result from "./Result";
+import { Routes, Route } from "react-router-dom";
 
-import { Route, Switch, Redirect } from "react-router-dom";
+// import { Route, Routes } from "react-router-dom";
 
 const Body = () => {
   return (
     <div className="p-4">
-      <Switch>
-        <Route exact path="/">
-          <Redirect to="/search"></Redirect>
-        </Route>
-        <Route exact path={["/search", "/images", "/news", "/videos"]}>
-          <Result />
-        </Route>
-      </Switch>
+      <Routes>
+        <Route exact path="/" element={<Result />}></Route>
+        <Route exact path="/search" element={<Result />}></Route>
+        <Route exact path="/images" element={<Result />}></Route>
+        <Route exact path="/news" element={<Result />}></Route>
+        <Route exact path="videos" element={<Result />}></Route>
+      </Routes>
     </div>
   );
 };
