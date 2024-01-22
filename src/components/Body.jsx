@@ -2,6 +2,8 @@ import React from "react";
 import Result from "./Result";
 import { Routes, Route } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Footer from "./Footer";
+import Search from "./Search";
 
 // import { Route, Routes } from "react-router-dom";
 
@@ -10,8 +12,8 @@ const Body = () => {
   return (
     <div className="p-4">
       <Routes>
-        <Route exact path="/">
-          navigate("/search");
+        <Route exact path="/" element={<abc />}>
+          {/* navigate("/search"); */}
         </Route>
 
         <Route exact path="/search" element={<Result />}></Route>
