@@ -1,7 +1,7 @@
-import { Result } from "postcss";
 import React from "react";
+import Result from "./Result";
 
-import { Route, Redirect, Switch } from "react-router-dom";
+import { Route, Switch, Redirect } from "react-router-dom";
 
 const Body = () => {
   return (
