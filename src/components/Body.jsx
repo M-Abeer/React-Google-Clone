@@ -12,9 +12,9 @@ const Body = () => {
   return (
     <div className="p-4">
       <Routes>
-        <Route exact path="/" element={<abc />}>
-          {/* navigate("/search"); */}
-        </Route>
+        {/* <Route exact path="/" element={<abc />}>
+          { navigate("/search"); }
+        </Route> */}
 
         <Route exact path="/search" element={<Result />}></Route>
         <Route exact path="/images" element={<Result />}></Route>
