@@ -32,7 +32,7 @@ const ResultContextProvider = ({ children }) => {
   );
 };
 
-const useResultContext = () => {
+export const useResultContext = () => {
   useContext(ResultContext);
 };
 
